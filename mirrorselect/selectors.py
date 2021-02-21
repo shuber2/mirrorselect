@@ -260,7 +260,7 @@ class Deep(object):
 		for host in hosts:
 
 			prog += 1
-			if self.test_file is not 'mirrorselect-test':
+			if self.test_file != 'mirrorselect-test':
 				self.output.print_info(
 					'Downloading %s files from each mirror... [%s of %s]'
 					% (self.test_file, prog, num_hosts) )
